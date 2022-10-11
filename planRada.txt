@@ -1,0 +1,31 @@
+* Napraviti stranice za :
+    - Pocetna
+    - Vesti
+    - Nagradna igra
+    - Tabela
+    - Spisak reprezentacija i spisak igraca koji igraju
+
+* Pocetna
+    - Navigacija
+    - Jumbotron - odbrojavanje vremena do pocetka SP2022
+    - U pozadini Jumbotrona moze video ili neka slika
+    - Footer
+
+* Vesti
+    - Navigacija
+    - Najnovije vesti o SP2022 (random za pocetak)
+
+* Nagradna igra
+    - Navigacija
+    - Zreb i tabela i mogucnost biranja pobednika u grupi
+    - Ispis korisnickog imena
+    - Neka vrsta forme (korisnicko ime, email, godiste) - na email stize notifikacija sa kodom koji treba da se unese da bi se prihvatio izbor
+
+* Tabela
+    - Navigacija
+    - Trenutno stanje bodova i ostale informacije
+
+* Spisak reprezentacija i spisak igraca koji igraju
+    - Navigacija
+    - Grid ili flex sa imenom reprezentacije i zastavom drzave sa nekim HOVER efekton
+    - Klik na reprezentaciju otvara se modal sa informacijama o reprezentaciji
