@@ -1,27 +1,38 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bangers&family=Bebas+Neue&family=Fjalla+One&family=Proza+Libre:wght@400;800&display=swap");
+
+/* VARIJABLE */
+:root {
+  --primary: #8a1538;
+  --secondary: rgb(20, 15, 15);
+  --lightgrey: white;
+  --pink: #d22257;
+
+  --fontNaslov: "Bangers", cursive;
+  --fontNaslov1: "Proza Libre", sans-serif;
+  --fontNaslov4: "Alfa Slab One", cursive;
+  --fontNaslov2: "Bebas Neue", cursive;
+  --fontNaslov3: "Fjalla One", sans-serif;
 }
 
-nav {
-    background-color: teal;
-    height: 20vh;
-    display: flex;
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#nav-ul{
-    display: flex;
-	flex-direction: row;
-	justify-content: center;
-    align-items: center;
+body {
+  background-color: rgb(226, 226, 226);
 }
 
-#nav-logo {
-    scale: 0.7;
+footer {
+  height: 10vh;
+  color: var(--primary);
+  margin-top: 1px solid var(--primary);
+  text-align: center;
 }
 
-#nav-ul li {
-    list-style-type: none;
-    margin-left: 30px;
+footer p {
+  padding: 20px;
 }

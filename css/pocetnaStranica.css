@@ -1,0 +1,47 @@
+/* Prva sekcija u main - slika i odbrojavanje */
+#sectionCountdown {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  border-top: 3px solid var(--primary);
+  border-bottom: 3px solid var(--primary);
+  background-color: var(--lightgrey);
+}
+
+#countdownDiv {
+  width: 30%;
+  text-align: center;
+  font-size: 2rem;
+  font-family: var(--fontNaslov1);
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  align-items: center;
+  color: var(--primary);
+}
+
+/* paragraf za odbrojavanje */
+#timer {
+  border: 3px solid black;
+  background-color: var(--primary);
+  color: white;
+  height: 30%;
+  padding: 5px;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+
+#countdownImg {
+  width: 70%;
+}
+
+#countdownImg img {
+  height: 100%;
+  width: 100%;
+  -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+/* DRUGA SEKCIJA SLAJDER SA STADIONIMA */
+
