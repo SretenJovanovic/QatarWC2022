@@ -1,26 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- head sa stilovima koji su zajednicki -->
+<?php
+include 'includes/inc.head.php';
+?>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
-
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/navigacija.css" />
-  <link rel="stylesheet" href="css/pocetnaStranica.css" />
-  <title>Svetsko prvenstvo 2022</title>
+<!-- Stil za pocetnu stranicu -->
+<link rel="stylesheet" href="css/pocetnaStranica.css" />
+<!-- Title u tabu -->
+<title>Svetsko prvenstvo 2022</title>
 </head>
 
 <body>
+
+  <!-- NAVIGACIJA -->
   <?php
   include 'includes/inc.navigacija.php';
   ?>
 
-
+  <!-- MAIN -->
   <main>
+
+    <!-- SECTION COUNTDOWN -->
     <section id="sectionCountdown">
       <div id="countdownImg">
         <img src="img/qatarWC2022.jpg" alt="qatarWC" />
@@ -32,154 +32,309 @@
       </div>
     </section>
 
-    <section id="sectionStadiums">
-      <div class="stadium">
-        <div class="stadiumImg">
-          <img src="img/stadiums/Al-Bayt-Stadium.webp" alt="Al Bayt Stadium">
+
+
+    <!-- SECTION RASPORED UTAKMICA -->
+    <section id="rasporedUtakmica">
+
+      <!-- GRUPNA FAZA TABELA -->
+      <div class="rasporedMain" id="grupnaFaza">
+        <button class="collapseDugme">
+          <span>GRUPNA FAZA</span>
+          <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+        </button>
+        <div class="collapseDiv">
+          <table class="rasporedUtakmicaTabela">
+            <thead>
+              <tr>
+                <th>Datum</th>
+                <th>Vreme</th>
+                <th colspan="2">Domaćin</th>
+                <th colspan="2">Gost</th>
+                <th>Stadion</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>20 Novembar</td>
+                <td>19:00</td>
+                <td>Qatar</td>
+                <td><img class="zastavaImg" src="img/zastave/qatar.png" alt=""></td>
+                <td><img class="zastavaImg" src="img/zastave/ecuador.png" alt=""></td>
+                <td>Ecuador</td>
+                <td>
+                  <a href="stadioni.php#alBayt" target="_blank">
+                    <p>Al Bayt stadion</p> 
+                    <img class="stadionImg" src="img/stadium/al-bayt-transparent.webp" alt="">
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>21 Novembar</td>
+                <td>16:00</td>
+                <td>England</td>
+                <td><img class="zastavaImg" src="img/zastave/england.png" alt=""></td>
+                <td><img class="zastavaImg" src="img/zastave/iran.png" alt=""></td>
+                <td>Iran</td>
+                <td>
+                  <a href="stadioni.php#khalifaInternational" target="_blank">
+                  <p>Khalifa International stadion</p>
+                    <img class="stadionImg" src="img/stadium/khalifa-transparent.webp" alt="">
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>21 Novembar</td>
+                <td>19:00</td>
+                <td>Senegal</td>
+                <td><img class="zastavaImg" src="img/zastave/senegal.png" alt=""></td>
+                <td><img class="zastavaImg" src="img/zastave/netherlands.png" alt=""></td>
+                <td>Netherlands</td>
+                <td>
+                  <a href="stadioni.php#alThumama" target="_blank">
+                  <p>Al Thumama stadion</p>
+                    <img class="stadionImg" src="img/stadium/al-thumana-transparent.webp" alt="">
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>21 Novembar</td>
+                <td>22:00</td>
+                <td>USA</td>
+                <td><img class="zastavaImg" src="img/zastave/united-states.png" alt=""></td>
+                <td><img class="zastavaImg" src="img/zastave/wales.png" alt=""></td>
+                <td>Wales</td>
+                <td>
+                  <a href="stadioni.php#ahmadBinAli" target="_blank">
+                  <p>Ahmad Bin Ali stadion</p>
+                    <img class="stadionImg" src="img/stadium/ahmad-transparent.webp" alt="">
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+              </tr>
+            </tfoot>
+          </table>
         </div>
-        <div class="stadiumInfo">
-          <h2>Al Bayt Stadium</h2>
-          <p>Enjoy the warmest of Arab welcomes</p>
-          <p>Host of the Opening Match of the FIFA World Cup Qatar 2022™</p>
-          <hr>
-          <div>
-            <p>Capacity
-              60,000</p>
-            <p>Al Khor City, 35km north of central Doha</p>
-          </div>
-          <hr>
+      </div>
+
+      <!-- TOP16 TABELA-->
+      <div class="rasporedMain" id="top16">
+        <button class="collapseDugme">
+          <span>TOP16</span>
+          <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+        </button>
+        <div class="collapseDiv">
+          <table class="rasporedUtakmicaTabela">
+            <thead>
+              <tr>
+                <th>Datum</th>
+                <th>Vreme</th>
+                <th colspan="2">Domaćin</th>
+                <th colspan="2">Gost</th>
+                <th>Stadion</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>21 Novembar</td>
+                <td>19:00</td>
+                <td>Senegal</td>
+                <td><img class="zastavaImg" src="img/zastave/senegal.png" alt=""></td>
+                <td><img class="zastavaImg" src="img/zastave/netherlands.png" alt=""></td>
+                <td>Netherlands</td>
+                <td>
+                  <a href="stadioni.php#alThumana" target="_blank">
+                    <p>Al Thumama stadion</p>
+                    <img class="stadionImg" src="img/stadium/al-thumana-transparent.webp" alt="">
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+              </tr>
+            </tfoot>
+          </table>
         </div>
       </div>
-      <!-- <div>
-        <h2>Lusail Stadium</h2>
-        <img src="img/stadium/lusail-transparent.webp" alt="Lusail Stadium">
+
+      <!-- CETVRTFINALE TABELA -->
+      <div class="rasporedMain" id="cetvrtinaFinala">
+        <button class="collapseDugme">
+          <span>ČETVRTFINALE</span>
+          <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+        </button>
+        <div class="collapseDiv">
+          <table class="rasporedUtakmicaTabela">
+            <thead>
+              <tr>
+                <th>Datum</th>
+                <th>Vreme</th>
+                <th colspan="2">Domaćin</th>
+                <th colspan="2">Gost</th>
+                <th>Stadion</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>21 Novembar</td>
+                <td>19:00</td>
+                <td>Senegal</td>
+                <td><img class="zastavaImg" src="img/zastave/senegal.png" alt=""></td>
+                <td><img class="zastavaImg" src="img/zastave/netherlands.png" alt=""></td>
+                <td>Netherlands</td>
+                <td>
+                  <a href="stadioni.php#alThumana" target="_blank">
+                  <p>Al Thumama stadion</p>
+                    <img class="stadionImg" src="img/stadium/al-thumana-transparent.webp" alt="">
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
       </div>
-      <div>
-        <h2>Ahmad Bin Ali Stadium</h2>
-        <img src="img/stadium/ahmad-transparent.webp" alt="Ahmad Bin Ali Stadium">
+
+      <!-- POLUFINALE TABELA -->
+      <div class="rasporedMain" class="rasporedMain" id="polufinale">
+        <button class="collapseDugme">
+          <span>POLUFINALE</span>
+          <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+        </button>
+        <div class="collapseDiv">
+          <table class="rasporedUtakmicaTabela">
+            <thead>
+              <tr>
+                <th>Datum</th>
+                <th>Vreme</th>
+                <th colspan="2">Domaćin</th>
+                <th colspan="2">Gost</th>
+                <th>Stadion</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>21 Novembar</td>
+                <td>19:00</td>
+                <td>Senegal</td>
+                <td><img class="zastavaImg" src="img/zastave/senegal.png" alt=""></td>
+                <td><img class="zastavaImg" src="img/zastave/netherlands.png" alt=""></td>
+                <td>Netherlands</td>
+                <td>
+                  <a href="stadioni.php#alThumana" target="_blank">
+                  <p>Al Thumama stadion</p>
+                    <img class="stadionImg" src="img/stadium/al-thumana-transparent.webp" alt="">
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
       </div>
-      <div>
-        <h2>Al Janoub Stadium</h2>
-        <img src="img/stadium/al-janoub-transparent.webp" alt="Al Janoub Stadium">
+
+      <!-- TRECE MESTO TABELA -->
+      <div class="rasporedMain" id="treceMesto">
+        <button class="collapseDugme">
+          <span>TRECE MESTO</span>
+          <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+        </button>
+        <div class="collapseDiv">
+          <table class="rasporedUtakmicaTabela">
+            <thead>
+              <tr>
+                <th>Datum</th>
+                <th>Vreme</th>
+                <th colspan="2">Domaćin</th>
+                <th colspan="2">Gost</th>
+                <th>Stadion</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>21 Novembar</td>
+                <td>19:00</td>
+                <td>Senegal</td>
+                <td><img class="zastavaImg" src="img/zastave/senegal.png" alt=""></td>
+                <td><img class="zastavaImg" src="img/zastave/netherlands.png" alt=""></td>
+                <td>Netherlands</td>
+                <td>
+                  <a href="stadioni.php#alThumana" target="_blank">
+                  <p>Al Thumama stadion</p>
+                    <img class="stadionImg" src="img/stadium/al-thumana-transparent.webp" alt="">
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
       </div>
-      <div>
-        <h2>Al Thumama Stadium</h2>
-        <img src="img/stadium/al-thumana-transparent.webp" alt="Al Thumama Stadium">
+
+      <!-- FINALE TABELA -->
+      <div class="rasporedMain" id="finale">
+        <button class="collapseDugme">
+          <span>FINALE</span>
+          <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+        </button>
+        <div class="collapseDiv">
+          <table class="rasporedUtakmicaTabela">
+            <thead>
+              <tr>
+                <th>Datum</th>
+                <th>Vreme</th>
+                <th colspan="2">Domaćin</th>
+                <th colspan="2">Gost</th>
+                <th>Stadion</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>21 Novembar</td>
+                <td>19:00</td>
+                <td>Senegal</td>
+                <td><img class="zastavaImg" src="img/zastave/senegal.png" alt=""></td>
+                <td><img class="zastavaImg" src="img/zastave/netherlands.png" alt=""></td>
+                <td>Netherlands</td>
+                <td>
+                  <a href="stadioni.php#alThumana" target="_blank">
+                  <p>Al Thumama stadion</p>
+                    <img class="stadionImg" src="img/stadium/al-thumana-transparent.webp" alt="">
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
       </div>
-      <div>
-        <h2>Education City Stadium</h2>
-        <img src="img/stadium/education-transparent.webp" alt="Education City Stadium">
-      </div>
-      <div>
-        <h2>Khalifa International Stadium</h2>
-        <img src="img/stadium/khalifa-transparent.webp" alt="Khalifa International Stadium">
-      </div>
-      <div>
-        <h2>Stadium 974</h2>
-        <img src="img/stadium/974-transparent.webp" alt="Stadium 974">
-      </div> -->
+
     </section>
 
-
-    <!-- <section id="section2">
-      <div>
-        <img src="img/stadiums/Al-Bayt-Stadium.webp" alt="" />
-        <h2>Al Bayt Stadium</h2>
-        <p>Capacity 60,000</p>
-        <p>Al Khor City, 35km north of central Doha</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-          cupiditate ducimus, deleniti sit adipisci porro. Ex sit quaerat
-          doloremque non.
-        </p>
-      </div>
-      <div>
-        <img src="img/stadiums/Lusail-Stadium.jpg" alt="" />
-        <h2>Lusail Stadium</h2>
-        <p>Capacity 60,000</p>
-        <p>Al Khor City, 35km north of central Doha</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-          cupiditate ducimus, deleniti sit adipisci porro. Ex sit quaerat
-          doloremque non.
-        </p>
-      </div>
-      <div>
-        <img src="img/stadiums/Ahmad-Bin-Ali-Stadium.jpg" alt="" />
-        <h2>Ahmad Bin Ali Stadium</h2>
-        <p>Capacity 60,000</p>
-        <p>Al Khor City, 35km north of central Doha</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-          cupiditate ducimus, deleniti sit adipisci porro. Ex sit quaerat
-          doloremque non.
-        </p>
-      </div>
-      <div>
-        <img src="img/stadiums/Al-Janoub-Stadium.jpg" alt="" />
-        <h2>Al Janoub Stadium</h2>
-        <p>Capacity 60,000</p>
-        <p>Al Khor City, 35km north of central Doha</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-          cupiditate ducimus, deleniti sit adipisci porro. Ex sit quaerat
-          doloremque non.
-        </p>
-      </div>
-      <div>
-        <img src="img/stadiums/Al-Thumama-Stadium.jpg" alt="" />
-        <h2>Al Thumama Stadium</h2>
-        <p>Capacity 60,000</p>
-        <p>Al Khor City, 35km north of central Doha</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-          cupiditate ducimus, deleniti sit adipisci porro. Ex sit quaerat
-          doloremque non.
-        </p>
-      </div>
-      <div>
-        <img src="img/stadiums/Education-City-Stadium.webp" alt="" />
-        <h2>Education City Stadium</h2>
-        <p>Capacity 60,000</p>
-        <p>Al Khor City, 35km north of central Doha</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-          cupiditate ducimus, deleniti sit adipisci porro. Ex sit quaerat
-          doloremque non.
-        </p>
-      </div>
-      <div>
-        <img src="img/stadiums/Khalifa-International-Stadium.jpg" alt="" />
-        <h2>Khalifa International Stadium</h2>
-        <p>Capacity 60,000</p>
-        <p>Al Khor City, 35km north of central Doha</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-          cupiditate ducimus, deleniti sit adipisci porro. Ex sit quaerat
-          doloremque non.
-        </p>
-      </div>
-      <div>
-        <img src="img/stadiums/Stadium-974.jpg" alt="" />
-        <h2>Stadium 974</h2>
-        <p>Capacity 60,000</p>
-        <p>Al Khor City, 35km north of central Doha</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-          cupiditate ducimus, deleniti sit adipisci porro. Ex sit quaerat
-          doloremque non.
-        </p>
-      </div>
-    </section> -->
   </main>
-  <footer>
-    <div>
-      <p>Copyright &copy; Sreten Jovanovic 2022.</p>
-    </div>
-  </footer>
 
+  <!-- FOOTER -->
+  <?php
+  include 'includes/inc.footer.php';
+  ?>
 
-  <script src="js/script.js"></script>
+  <script src="js/scriptPocetna.js"></script>
 </body>
 
 </html>

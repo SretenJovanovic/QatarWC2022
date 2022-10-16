@@ -58,3 +58,25 @@ let countdownWithInterval = setInterval(function () {
     timer.style.padding = "13px";
   }
 }, 1000);
+
+
+
+// COLLAPSE DUGMICI ZA RASPORED UTAKMICA
+
+// pravljenje kolekcije svih dugmica sa klasom collapseDugme
+let collapseDugme = document.getElementsByClassName("collapseDugme");
+
+// postavljanje event listenera na klik za svako dugme
+
+for (let i = 0; i < collapseDugme.length; i++) {
+  collapseDugme[i].addEventListener("click", function() {
+    // dodavanje klase active kada je dugme pritisnuto
+    this.classList.toggle("active");
+    let sadrzaj = this.nextElementSibling;
+    if (sadrzaj.style.display === "block") {
+      sadrzaj.style.display = "none";
+    } else {
+      sadrzaj.style.display = "block";
+    }
+  });
+}

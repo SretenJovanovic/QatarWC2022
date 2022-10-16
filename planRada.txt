@@ -1,6 +1,6 @@
 * Napraviti stranice za :
     - Pocetna
-    - Vesti
+    - Stadioni
     - Nagradna igra
     - Tabela
     - Spisak reprezentacija i spisak igraca koji igraju
@@ -9,11 +9,12 @@
     - Navigacija
     - Jumbotron - odbrojavanje vremena do pocetka SP2022
     - U pozadini Jumbotrona moze video ili neka slika
+    - Redosled utakmica po segmentima (grupa,top16,cetvrtfinale itd....)
     - Footer
 
-* Vesti
+* Stadioni
     - Navigacija
-    - Najnovije vesti o SP2022 (random za pocetak)
+    - Stadioni i informacije o stadionima
 
 * Nagradna igra
     - Navigacija
