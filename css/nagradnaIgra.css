@@ -1,0 +1,8 @@
+.radioContainer{
+    margin-top: 20px;
+    display: grid;
+    width: 90vw;
+    grid-template-columns: repeat(2,10% 30%);
+    grid-template-rows: repeat(8,auto);
+    justify-items: center;
+}

@@ -16,17 +16,17 @@
     - Navigacija
     - Stadioni i informacije o stadionima
 
-* Nagradna igra
-    - Navigacija
-    - Zreb i tabela i mogucnost biranja pobednika u grupi
-    - Ispis korisnickog imena
-    - Neka vrsta forme (korisnicko ime, email, godiste) - na email stize notifikacija sa kodom koji treba da se unese da bi se prihvatio izbor
-
-* Tabela
+* Grupe
     - Navigacija
     - Trenutno stanje bodova i ostale informacije
 
 * Spisak reprezentacija i spisak igraca koji igraju
     - Navigacija
-    - Grid ili flex sa imenom reprezentacije i zastavom drzave sa nekim HOVER efekton
-    - Klik na reprezentaciju otvara se modal sa informacijama o reprezentaciji
+    - Grid ili flex sa imenom reprezentacije i zastavom drzave 
+
+    
+* Nagradna igra
+    - Navigacija
+    - Zreb i tabela i mogucnost biranja pobednika u grupi
+    - Ispis korisnickog imena
+    - Neka vrsta forme (korisnicko ime, email, godiste) - na email stize notifikacija sa kodom koji treba da se unese da bi se prihvatio izbor
