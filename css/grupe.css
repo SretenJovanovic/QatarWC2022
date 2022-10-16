@@ -1,0 +1,38 @@
+.grupe{
+    display: grid;
+    width: 90vw;
+    margin: auto;
+    grid-template-columns: repeat(4,25%);
+    justify-content: space-around;
+    gap:20px;
+    color: var(--primary);
+}
+
+.grupe img {
+    width: 100px;
+}
+
+.grupeBox{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.grupeBox h2{
+    margin:10px 0;
+    font-family: var(--fontNaslov1);
+    font-size: 2rem;
+}
+.grupaReprezentacije {
+    background-color: var(--white);
+    border: 1px solid var(--primary);
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2,50%);
+    justify-items: center;
+    align-items: center;
+}
+
+.grupaReprezentacije p {
+    font-size: 1.4rem;
+    font-family: var(--fontNaslov2);
+}
