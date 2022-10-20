@@ -15,13 +15,6 @@ include 'includes/inc.head.php';
     include 'includes/inc.spisakReprezentacijaArray.php';
     ?>
 
-    <?php
-    // Pravljenje varijabli sa nazivom $reprezentacija pa nulti element iz niza, npr reprezentacijaQatar
-    foreach ($reprezentacije as $reprezentacija) {
-        ${'reprezentacija' . $reprezentacija[0]} = [];
-        ${'reprezentacija' . $reprezentacija[0]} = $reprezentacija;
-    };
-    ?>
 
     <div class="grupe">
         <div class="grupeBox">

@@ -13,5 +13,7 @@
   <link rel="stylesheet" href="css/style.css" />
   <!-- Stil za navigaciju -->
   <link rel="stylesheet" href="css/navigacija.css" />
+  <!-- Stil za footer -->
+  <link rel="stylesheet" href="css/footer.css" />
   <!-- font awesome ikonice -->
   <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">

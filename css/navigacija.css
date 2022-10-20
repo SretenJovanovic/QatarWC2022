@@ -4,7 +4,7 @@ nav {
     display: flex;
     justify-content: space-between;
     height: 12vh;
-    margin: 50px 0 10px 0;
+    margin: 30px 0 10px 0;
     position: sticky;
     top: 0px;
     z-index: 100;

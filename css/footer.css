@@ -1,0 +1,15 @@
+footer {
+    margin-top: 20px;
+    background-color: var(--white);
+    border-top: 1px solid var(--primary);
+    height: 10vh;
+    color: var(--primary);
+    text-align: center;
+}
+
+footer p {
+    font-family: var(--fontNaslov);
+    font-size: 1.4rem;
+    line-height: 10vh;
+    padding: 0;
+}

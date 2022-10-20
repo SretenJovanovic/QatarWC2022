@@ -12,14 +12,19 @@ include 'includes/inc.head.php';
   ?>
 
   <div id="nagradnaIgra">
-
+    <h2>Nagradna igra</h2>
+    <p>** Igrač koji osvoji najveći broj poena dobija nagradno putovanje na finale svetskog prvenstva u Katar 2022, za dve osobe u periodu 16.12.- 20.12.2022. godine **</p>
+    <p>**Svaki pogodak donosi 2 poena.**</p>
     <form action="" method="post">
-      <label for="username">Korisničko ime</label>
-      <input type="text" name="username" id="username">
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email">
-      <p>Koje reprezentacije će biti prve u svojoj grupi?</p>
+      <div id="infoContainer">
+        <label for="username">Korisničko ime</label>
+        <input type="text" name="username" id="username" required>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+      </div>
 
+
+      <p>Koje reprezentacije će biti prve u svojoj grupi?</p>
 
       <div class="radioContainer">
         <label for="grupaA">Grupa A:</label>
@@ -112,24 +117,38 @@ include 'includes/inc.head.php';
         </div>
 
       </div>
-      <hr>
 
-
-
-
-      <button type="submit">Posalji...</button>
+      <button id="submitBtn" type="submit">Posalji</button>
     </form>
 
+    <div id="rezultat"></div>
+  </div>
+  <!-- FOOTER -->
+  <?php
+  include 'includes/inc.footer.php';
+  ?>
 
-    <!-- FOOTER -->
-    <?php
-    include 'includes/inc.footer.php';
-    ?>
+  <script>
+    // Postavljanje required atributa na sve radio buttone
+    let radioButtons = document.querySelectorAll('input[type=radio]');
 
-    <script>
-      let grupaA = document.getElementsByName("grupaA");
-      console.log(grupaA[0].value);
-    </script>
+    radioButtons.forEach((radioButton, index) => {
+      radioButton.setAttribute('required', true);
+    });
+
+
+    let submitBtn = document.getElementById('submitBtn');
+    submitBtn.addEventListener("click", function() {
+      let checkedArray = [];
+      radioButtons.forEach((radioButton, index) => {
+
+        if (radioButton.checked) {
+          checkedArray.push(radioButton.value);
+        }
+      });
+      console.log(checkedArray);
+    })
+  </script>
 </body>
 
 </html>
