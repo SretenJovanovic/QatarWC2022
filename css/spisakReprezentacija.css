@@ -1,37 +1,82 @@
+#spisakReprezentacija {
+  width: 90vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  gap: 10px;
+  justify-content: center;
+  align-items: space-around;
+  text-align: center;
+}
 
-    #spisakReprezentacija{
-        width: 90vw;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(4,25%);
-        gap: 10px;
-        justify-content: center;
-        align-items: space-around;
-        text-align: center;
-    }
-    
-    #spisakReprezentacija img{
-        width: 70%;
-    }
-    
-    .reprezentacija {
-        border: 2px solid var(--primary);
-        border-radius: 10%;
-        background-color: var(--white);
-        padding: 30px;
-        width: 100%;
-    }
-    
-    .reprezentacija h2{
-        font-family: var(--fontNaslov);
-        font-size: 2rem;
-        color: var(--pink);
-        letter-spacing: 4px;
-    }
-    
-    .reprezentacija p {
-        margin: auto;
-        font-size: 1.5rem;
-        padding-top: 15px;
-    }
-    
+#spisakReprezentacija img {
+  width: 70%;
+}
+
+.reprezentacija {
+  border: 2px solid var(--primary);
+  border-radius: 10%;
+  background-color: var(--white);
+  padding: 30px;
+  width: 100%;
+}
+
+.reprezentacija h2 {
+  font-family: var(--fontNaslov);
+  font-size: 2rem;
+  color: var(--pink);
+  letter-spacing: 4px;
+}
+
+.reprezentacija p {
+  margin: auto;
+  font-size: 1.5rem;
+  padding-top: 15px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #spisakReprezentacija {
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  #spisakReprezentacija img {
+    width: 50%;
+  }
+
+  .reprezentacija {
+    padding: 20px;
+  }
+
+  .reprezentacija h2 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+
+  .reprezentacija p {
+    font-size: 1.2rem;
+    padding-top: 10px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  #spisakReprezentacija {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width:1200px){
+  #spisakReprezentacija {
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  .reprezentacija h2 {
+    font-size: 1.8rem;
+  }
+
+  .reprezentacija p {
+    font-size: 1.5rem;
+  }
+}

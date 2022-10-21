@@ -1,71 +1,223 @@
-
 /* NAVIGACIJA glavni element */
 nav {
-    display: flex;
-    justify-content: space-between;
-    height: 12vh;
-    margin: 50px 0 10px 0;
-    position: sticky;
-    top: 0px;
-    z-index: 100;
-    background-color: var(--white);
-    border-top: 1px solid var(--primary);
-    border-bottom: 1px solid var(--primary);
-  }
-  
-  /* NAVIGACIJA neuredjena lista - linkovi */
-  #nav-ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    padding: 0 16px;
-  }
-  
-  #nav-ul li {
-    list-style-type: none;
-    display: flex;
-    height: 100%;
-    margin-right: 20px;
-    text-align: center;
-  }
-  
-  /* Linkovi u navigaciji ( bez logo slicice) */
-  #nav-ul li a {
+  display: flex;
+  justify-content: space-between;
+  height: 12vh;
+  margin: 50px 0 10px 0;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  background-color: var(--white);
+  border-top: 1px solid var(--primary);
+  border-bottom: 1px solid var(--primary);
+}
+
+/* NAVIGACIJA neuredjena lista - linkovi */
+#nav-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding: 0 16px;
+}
+
+#nav-ul li {
+  list-style-type: none;
+  display: flex;
+  height: 100%;
+  margin-right: 20px;
+  text-align: center;
+}
+
+/* Linkovi u navigaciji ( bez logo slicice) */
+#nav-ul li a {
+  position: relative;
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 2rem;
+  font-family: var(--fontNaslov);
+  line-height: 2.7;
+  padding: 0 20px;
+}
+
+/* Kreiranje pseudo elementa nakon linkova u navigaciji */
+#nav-ul li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 5px;
+  bottom: 10px;
+  left: 0;
+  background-color: var(--pink);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-in;
+}
+/* Nakon prelaska misem preko linka pojavljuje se element koji je kreiran preko pseudo klase */
+#nav-ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* NAVIGACIJA logo img */
+#nav-logo {
+  margin-left: 3%;
+  filter: drop-shadow(8px 8px 4px var(--primary));
+  height: 100%;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #nav-main {
     position: relative;
-    text-decoration: none;
-    color: var(--primary);
-    font-size: 2rem;
-    font-family: var(--fontNaslov);
-    line-height: 2.7;
-    padding: 0 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    border-bottom: 3px solid var(--primary);
+    margin-bottom: 10px;
   }
-  
-  
-  /* Kreiranje pseudo elementa nakon linkova u navigaciji */
-  #nav-ul li a::after {
-    content: "";
-    position: absolute;
+  #nav-main a {
+    height: 10vh;
+  }
+  #nav-ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    width: 100vw;
+  }
+  #nav-ul li {
+    display: block;
+    margin: 0;
     width: 100%;
-    transform: scaleX(0);
-    height: 5px;
-    bottom: 10px;
-    left: 0;
-    background-color: var(--pink);
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-in;
   }
-  /* Nakon prelaska misem preko linka pojavljuje se element koji je kreiran preko pseudo klase */
-  #nav-ul li a:hover::after {
-    transform: scaleX(1); 
-    transform-origin: bottom left;
+  #nav-ul li a {
+    font-size: 1.5rem;
   }
-  
-  /* NAVIGACIJA logo img */
+
   #nav-logo {
-    margin-left: 3%;
-    filter: drop-shadow(8px 8px 4px var(--primary));
+    margin: auto;
     height: 100%;
   }
-  
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px)and (max-width: 768px) {
+  #nav-main {
+    position: relative;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    border-bottom: 3px solid var(--primary);
+    margin-bottom: 10px;
+  }
+  #nav-main a {
+    height: 10vh;
+  }
+  #nav-ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    width: 100vw;
+  }
+  #nav-ul li {
+    display: block;
+    margin: 0;
+    width: 100%;
+  }
+  #nav-ul li a {
+    font-size: 2rem;
+  }
+
+  #nav-logo {
+    margin: auto;
+    height: 100%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px){
+  #nav-main {
+    position: relative;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    border-bottom: 3px solid var(--primary);
+    margin-bottom: 10px;
+  }
+  #nav-main a {
+    height:20vh;
+  }
+  #nav-ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    width: 100vw;
+  }
+  #nav-ul li {
+    display: block;
+    margin: 0;
+    width: 100%;
+  }
+  #nav-ul li a {
+    font-size: 2rem;
+  }
+
+  #nav-logo {
+    margin: auto;
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width:1200px){
+  #nav-main {
+    position: relative;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    border-bottom: 3px solid var(--primary);
+    margin-bottom: 10px;
+  }
+  #nav-main a {
+    height:20vh;
+  }
+  #nav-ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    width: 100vw;
+  }
+  #nav-ul li {
+    display: block;
+    margin: 0;
+    width: 100%;
+  }
+  #nav-ul li a {
+    font-size: 2rem;
+  }
+
+  #nav-logo {
+    margin: auto;
+    height: 100%;
+  }
+}

@@ -84,3 +84,90 @@
       color: var(--primary);
   }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+      #nagradnaIgra h2 {
+        font-size: 2rem;
+      }
+      #infoContainer {
+          width: 80%;
+      }
+      #infoContainer label{
+          font-size: 1.5rem;
+      }
+      .radioContainer {
+        margin-bottom: 20px;
+        grid-template-columns: repeat(1, 20% 80%);
+      }
+      .radioGrupe label {
+          font-size: 1rem;
+      }
+      
+      .radioContainer>label {
+          font-size: 1rem;
+      }
+      
+      form button {
+          width: 80%;
+          font-size: 1.5rem;
+      }
+      
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    #nagradnaIgra h2 {
+        font-size: 2rem;
+      }
+      #infoContainer {
+          width: 80%;
+      }
+      #infoContainer label{
+          font-size: 1.5rem;
+      }
+      .radioContainer {
+        margin-bottom: 20px;
+        grid-template-columns: repeat(1, 20% 80%);
+      }
+      .radioGrupe label {
+          font-size: 1rem;
+      }
+      
+      .radioContainer>label {
+          font-size: 1rem;
+      }
+      
+      form button {
+          width: 80%;
+          font-size: 1.5rem;
+      }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)  and (max-width: 1200px) {
+    #nagradnaIgra h2 {
+        font-size: 2rem;
+      }
+      #infoContainer {
+          width: 80%;
+      }
+      #infoContainer label{
+          font-size: 1.5rem;
+      }
+      .radioContainer {
+        margin-bottom: 20px;
+        grid-template-columns: repeat(1, 20% 80%);
+      }
+      .radioGrupe label {
+          font-size: 1rem;
+      }
+      
+      .radioContainer>label {
+          font-size: 1rem;
+      }
+      
+      form button {
+          width: 80%;
+          font-size: 1.5rem;
+      }
+}

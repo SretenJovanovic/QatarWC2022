@@ -14,3 +14,16 @@ footer p {
   line-height: 10vh;
   padding: 0;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  
+footer {
+  margin-top: 10px;
+}
+
+footer p {
+  font-size: 1.2rem;
+}
+
+}
