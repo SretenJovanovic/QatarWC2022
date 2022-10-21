@@ -1,9 +1,9 @@
 * Napraviti stranice za :
     - Pocetna
     - Stadioni
-    - Nagradna igra
     - Tabela
     - Spisak reprezentacija i spisak igraca koji igraju
+    - Nagradna igra
 
 * Pocetna
     - Navigacija
@@ -28,5 +28,4 @@
 * Nagradna igra
     - Navigacija
     - Zreb i tabela i mogucnost biranja pobednika u grupi
-    - Ispis korisnickog imena
-    - Neka vrsta forme (korisnicko ime, email, godiste) - na email stize notifikacija sa kodom koji treba da se unese da bi se prihvatio izbor
+    - Neka vrsta forme (korisnicko ime, email)

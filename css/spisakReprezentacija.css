@@ -1,36 +1,37 @@
-#spisakReprezentacija{
-    width: 90vw;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4,25%);
-    gap: 10px;
-    justify-content: center;
-    align-items: space-around;
-    text-align: center;
-}
 
-#spisakReprezentacija img{
-    width: 70%;
-}
-
-.reprezentacija {
-    border: 2px solid var(--primary);
-    border-radius: 10%;
-    background-color: var(--white);
-    padding: 30px;
-    width: 100%;
-}
-
-.reprezentacija h2{
-    font-family: var(--fontNaslov);
-    font-size: 2rem;
-    color: var(--pink);
-    letter-spacing: 4px;
-}
-
-.reprezentacija p {
-    margin: auto;
-    font-size: 1.5rem;
-    padding-top: 15px;
-}
-
+    #spisakReprezentacija{
+        width: 90vw;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4,25%);
+        gap: 10px;
+        justify-content: center;
+        align-items: space-around;
+        text-align: center;
+    }
+    
+    #spisakReprezentacija img{
+        width: 70%;
+    }
+    
+    .reprezentacija {
+        border: 2px solid var(--primary);
+        border-radius: 10%;
+        background-color: var(--white);
+        padding: 30px;
+        width: 100%;
+    }
+    
+    .reprezentacija h2{
+        font-family: var(--fontNaslov);
+        font-size: 2rem;
+        color: var(--pink);
+        letter-spacing: 4px;
+    }
+    
+    .reprezentacija p {
+        margin: auto;
+        font-size: 1.5rem;
+        padding-top: 15px;
+    }
+    

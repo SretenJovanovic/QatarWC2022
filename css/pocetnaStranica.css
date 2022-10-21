@@ -22,7 +22,13 @@
 
 /* paragraf za odbrojavanje */
 #timer {
-  color:  var(--primary);
+  border: 3px solid black;
+  background-color: var(--primary);
+  color: white;
+  height: 30%;
+  padding: 5px;
+  width: 80%;
+  margin: 0 auto;
   font-size: 2rem;
 }
 
